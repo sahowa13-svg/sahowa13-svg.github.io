@@ -32,12 +32,12 @@
             <li>Frozen Fish</li>
             <li>Rice</li>
             <li>Cooking Oil</li>
-            <li>And more... (List is easily editable!)</li>
+            <li>And more... </li>
         </ul>
     </section>
     <section id="ordering">
         <h2>🛒 Ordering Terms</h2>
-        <p>Customers must be located around <strong>[your area here]</strong> to order for delivery.</p>
+        <p>Customers must be located around Ota to order for delivery.You may also call to verify whether your location can be accessible to delivery.</p>
         <p>Please call or WhatsApp us to confirm your delivery location and check product availability.</p>
     </section>
     <footer>
