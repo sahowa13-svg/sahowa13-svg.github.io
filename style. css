@@ -1,87 +1,130 @@
-/* Style Guide: Icy Blue (#d0f0ff) and Fonts */
-:root {
-    --primary-color: #d0f0ff; /* Icy Blue */
-    --accent-color: #f8f8f8; /* Light Gray/White */
-    --text-color: #333;
-    --heading-font: 'Poppins', sans-serif;
-    --body-font: 'Open Sans', sans-serif;
+/* Reset & Base Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Basic Reset and Body Styles */
 body {
-    font-family: var(--body-font);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: var(--accent-color); /* Light gray background */
-    color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #eef7fc; /* Soft icy-blue backdrop */
+  color: #102a43;
+  line-height: 1.6;
+  padding: 20px 14px 40px;
 }
 
+/* Main Centered Container */
+.container,
+main,
+header,
+footer {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header Banner */
 header {
-    background-color: var(--primary-color);
-    padding: 30px 20px;
-    text-align: center;
-    border-bottom: 5px solid #a0c0e0; /* A slightly darker blue border */
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #ffffff;
+  padding: 28px 22px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.18);
+  margin-bottom: 20px;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    color: #1a4f7a; /* Darker blue for contrast */
+header h1 {
+  font-size: 1.85rem;
+  line-height: 1.25;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
+header p {
+  font-size: 1rem;
+  color: #e0f2fe;
 }
 
-/* Section Styles */
+/* Section Cards */
 section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  background-color: #ffffff;
+  border: 1px solid #bae6fd;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
 }
 
-/* Product List */
-#products ul {
-    list-style-type: none;
-    padding: 0;
+section h2 {
+  font-size: 1.25rem;
+  color: #0369a1;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0f2fe;
 }
 
-#products li {
-    background: var(--primary-color);
-    margin-bottom: 8px;
-    padding: 10px;
-    border-left: 5px solid #6aa0c8;
-    border-radius: 4px;
-    font-weight: bold;
+/* Contact Details & Links */
+.contact-details p,
+section > p {
+  margin-bottom: 10px;
 }
 
-/* Contact Button */
+a {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Highlighted WhatsApp Button */
+.whatsapp-button {
+  margin-top: 14px;
+}
+
 .whatsapp-button a {
-    display: inline-block;
-    background-color: #25D366; /* WhatsApp Green */
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  background-color: #16a34a;
+  color: #ffffff;
+  padding: 11px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
+  transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
 .whatsapp-button a:hover {
-    background-color: #128C7E;
+  background-color: #15803d;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Products List Styled as Clean Tiles */
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+ul li {
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  color: #0c4a6e;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    color: #666;
-    font-size: 0.9em;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #486581;
+  margin-top: 24px;
 }
